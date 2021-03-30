@@ -1,0 +1,140 @@
+.about {
+	padding: 100px 0;
+
+	@media (max-width: 680px) {
+		padding: 50px 0;
+	}
+	
+}
+.about-inner {
+	display: flex;
+	justify-content: space-between;
+	min-width: 0;
+	align-items: center;
+	margin-bottom: 70px;
+
+	@media (max-width: 1050px) {
+		display: block;
+	}
+
+	@media (max-width: 680px) {
+		margin-bottom: 30px;
+	}
+	
+}
+.about-content {
+	max-width: 500px;
+	width: 100%;
+	margin-right: 30px;
+
+	@media (max-width: 1050px) {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	&__text {
+
+		p {
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+.about-slider__slide {
+	text-align: center;
+}
+.swiper-slide {}
+.about-slider__image {
+
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+.about-slider .swiper-button-prev::after,
+.about-slider .swiper-button-next::after {
+	color: #fff;
+	font-size: 45px;
+
+	@media (max-width: 850px) {
+		color: #000;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 25px;
+	}
+
+}
+
+
+
+.about-progress {
+	background: linear-gradient(133.79deg, rgba(65, 80, 106, 0.5) 0%, rgba(65, 80, 106, 0) 100%);
+	box-shadow: 20px 30px 100px 5px rgba(0, 0, 0, 0.25), inset -5px -5px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 4px rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(0.6px);
+	border-radius: 30px;
+}
+.about-progress__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 70px;
+
+	@media (max-width: 950px) {
+		padding: 30px 50px;
+	}
+
+	@media (max-width: 680px) {
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 500px) {
+		padding: 10px;
+	}
+}
+.about-progress__item {
+	@media (max-width: 680px) {
+		width: 50%;
+		margin-bottom: 15px;
+	}
+}
+.about-progress__item-text {
+	font-size: 80px;
+	line-height: 103px;
+	font-weight: $fw-semi-bold;
+	text-align: center;
+	span {
+		display: block;
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	@media (max-width: 950px) {
+		font-size: 50px;
+		line-height: 73px;
+
+		span {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		font-size: 35px;
+		line-height: 43px;
+
+		span {
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+}
+

@@ -1,0 +1,197 @@
+
+/*Переменные*/
+
+$bg-btn:#3C82F4;
+
+$fw-normal:400;
+$fw-medium:500;
+$fw-semi-bold:600;
+$fw-bold:700;
+
+/*Подключение внешних стилей*/
+@import "reset";
+@import "header";
+@import "texno";
+@import "advantages";
+@import "services-content";
+@import "services";
+@import "extra-services";
+@import "about";
+@import "work";
+@import "project";
+@import "footer";
+@import "header-mobile";
+@import "modal";
+
+
+
+
+/*Подключение шрифтов*/
+@font-face {
+	font-family: 'Futura PT';
+	src: url('../fonts/futura-pt-book.eot');
+	src: local('☺'), url('../fonts/futura-pt-book.woff') format('woff'), url('../fonts/futura-pt-book.ttf') format('truetype'), url('../fonts/futura-pt-book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura PT';
+	src: url('../fonts/futura-pt-medium.eot');
+	src: local('☺'), url('../fonts/futura-pt-medium.woff') format('woff'), url('../fonts/futura-pt-medium.ttf') format('truetype'), url('../fonts/futura-pt-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura PT';
+	src: url('../fonts/futura-pt-demi.eot');
+	src: local('☺'), url('../fonts/futura-pt-demi.woff') format('woff'), url('../fonts/futura-pt-demi.ttf') format('truetype'), url('../fonts/futura-pt-demi.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura PT';
+	src: url('../fonts/futura-pt-bold.eot');
+	src: local('☺'), url('../fonts/futura-pt-bold.woff') format('woff'), url('../fonts/futura-pt-bold.ttf') format('truetype'), url('../fonts/futura-pt-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+/*ОСНОВНЫЕ СТИЛИ*/
+
+body {
+	font-weight: $fw-normal;
+	font-family: 'Futura PT';
+	background-color: #070B13;
+	color: #fff;
+	font-size: 20px;
+	line-height: 150%;
+
+	&.active {
+		overflow: hidden;
+	}
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.base-title {
+	font-weight: $fw-bold;
+	font-size: 55px;
+	line-height: 71px;
+	position: relative;
+	z-index: 3;
+
+	@media (max-width: 680px) {
+		font-size: 35px;
+		line-height: 41px;
+	}
+	@media (max-width: 680px) {
+		font-size: 28px;
+		line-height: 31px;
+	}
+	&__advantages {
+		margin-bottom: 40px;
+
+		@media (max-width: 500px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__services {
+		margin-bottom: 100px;
+
+		@media (max-width: 680px) {
+			margin-bottom: 30px;	
+		}
+	}
+
+	&__about {
+		margin-bottom: 40px;
+		text-align: left;
+
+		@media (max-width: 680px) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+.base-btn {
+	max-width: 150px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+	z-index: 3;
+	a {
+		display: block;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 140%;
+		color: inherit;
+		background: #3C82F4;
+		box-shadow: 0px 4px 10px rgba(75, 105, 239, 0.2);
+		border-radius: 50px;
+		padding: 20px 0;
+		transition: all .4s;
+
+		&:hover {
+			background-color: #2155AA;
+			transform: scale(1.1);
+		}
+	}
+
+	&--project {
+		max-width: 200px;
+
+		a {
+			background: none;
+			border: 1px solid #fff;
+		}
+	}
+
+	&--long {
+		max-width: 220px;
+		box-shadow: 0px 4px 10px rgba(75, 105, 239, 0.2);
+		border-radius: 50%;
+		margin-right: 80px;
+	}
+
+	&--short {
+		max-width: 85px;
+		margin: 0 auto;
+	}
+
+	&--modal {
+		max-width: 220px;
+		box-shadow: 0px 4px 10px rgba(75, 105, 239, 0.2);
+		border-radius: 50%;
+		margin-bottom: 40px;
+		width: 100%;
+		margin-right: 80px;
+
+		@media (max-width: 500px) {
+			margin: 0 auto 0px auto;
+			margin-right: 0;
+		}
+	}
+}
+
+// Создание своей анимации
+
+[data-aos="new-animation"] {
+	transform: scale(0.5);
+}
+
+[data-aos="new-animation"].aos-animate {
+	transform: scale(1);
+ 
+}

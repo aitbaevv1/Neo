@@ -1,0 +1,32 @@
+
+.footer {
+	padding: 40px 0;
+	background-color: #030407;
+}
+.footer-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (max-width: 550px) {
+		flex-wrap: wrap;
+	}
+}
+
+.footer-right {
+	@media (max-width: 550px) {
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+.footer-social {
+	display: flex;
+	align-items: center;
+}
+.footer-icon {
+	margin-right: 25px;
+}
+.footer-text {
+	font-size: 12px;
+	line-height: 16px;
+}

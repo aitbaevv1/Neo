@@ -1,0 +1,104 @@
+.advantages {
+	padding: 60px 0;
+
+	@media (max-width: 680px) {
+		padding: 20px 0;
+	}
+}
+.advantages-slider {
+	position: relative;
+}
+.advantages-item {
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 990px) {
+		flex-direction: column;
+	}
+
+
+}
+.advantages-item__img {
+	// width: 50%;
+	margin-right: 20px;
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+.advantages-item__content {
+	width: 100%;
+	max-width: 600px;
+
+	@media (max-width: 990px) {
+		max-width: 100%;
+	}
+}
+
+.advantages-item__content-text {
+	font-size: 24px;
+	padding-bottom: 30px;
+
+	@media (max-width: 680px) {
+		font-size: 18px;
+	}
+	@media (max-width: 500px) {
+		font-size: 14px;
+		
+	}
+
+
+}
+
+
+/*Настройки стилей слайдера*/
+.slick-track {
+	display: flex;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.advantages-slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+
+	@media (max-width: 1040px) {
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+
+
+
+}
+
+.advantages-slider .slick-dots li{
+	list-style: none;
+	margin-right: 10px;
+}
+
+.advantages-slider .slick-dots button {
+	font-size: 0;
+	width: 14px;
+	height: 14px;
+	background-color: #152034;
+	border-radius: 50%;
+
+}
+
+
+
+.advantages-slider .slick-dots li.slick-active button {
+	background: linear-gradient(270deg, #FF6F4E 0%, #FF437E 100%);
+	width: 8px;
+	height: 8px;
+	
+}

@@ -1,0 +1,49 @@
+.services {
+	padding: 100px 0;
+
+	@media (max-width: 680px) {
+		padding-bottom: 0;
+	}
+}
+
+.base-title {
+	text-align: center;
+}
+
+.services-tabs__input {
+	background-color: #070B13;
+
+	@media (max-width: 500px) {
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+
+}
+.services-tabs__label {
+	margin-right: 55px;
+
+	@media (max-width: 680px) {
+		margin-right: 25px;
+	}
+
+	@media (max-width: 500px) {
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+}
+
+#tab-1:checked ~ .services-content-1 {
+	display: block;
+}
+
+#tab-2:checked ~ .services-content-2 {
+	display: block;
+}
+
+#tab-3:checked ~ .services-content-3 {
+	display: block;
+}
